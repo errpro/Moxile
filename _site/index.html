@@ -1,12 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Moxile</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
-    <link type="text/css" href="assets/css/moxile.css" media="all" rel="stylesheet">
+  <!--meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="ID=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Moxile, the best crossplatform markdown editor">
+  <meta name="keywords" content="Moxile, Markdown, Editor">
+  <meta name="author" content="errpro.com" />
+
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+  <title>Moxile</title>
+
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="assets/css/octicons.css">
+  <link rel="stylesheet" href="assets/css/moxile.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/product.css">
+
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="/assets/img/moxile-128.png">
+  <link rel="icon" href="/assets/img/moxile-128.png">
 </head>
-<body class="home">
+<body>
+  <header role="banner">
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#site-nav">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Moxile</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="site-nav">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+            <li><a href="/support">Support</a></li>
+          </ul>
+          <form class="navbar-form navbar-right" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+          </form>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  </header>
+  <main role="content">
+  <div class="jumbotron">
+  <div class="container">
+  <style type="text/css">
+header {
+  display: none;
+}
+
+main > .jumbotron {
+  padding-top: 0;
+}
+
+main > .jumbotron > .container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+kbd {
+  font-size: 75%;
+}
+</style>
 <section id="hero-spot" class="hero-spot">
     <a href="/"><img src="assets/img/moxile-128.png" alt="Moxile" class="logo"></a>
 
@@ -25,8 +99,8 @@
 </section>
 
 <section id="tutorial" class="tutorial">
-  <h1>Roll vanilla, or generate a site for your project to quickly get started.</h1>
-  <h2>You get one site per GitHub account and organization, <br>and unlimited project sites. Ready? Let’s get started.</h2>
+  <h1>Create, Edit and Save your markdown files. As well as QuickLook support.</h1>
+  <h2>Moxile is available for multipe platforms.<br>Such as OS X, Windows as well as Linux</h2>
 
   <ul class="tabs">
     <li><a href="#user-site" class="selected">Get Moxile</a></li>
@@ -36,10 +110,10 @@
   <!-- ### Start of tutorials -->
   <ul id="user-site" class="tutorial-list wrapper active">
     <li id="create-repo-step" class="image-right">
-      <h4>Create a repository</h4>
-      <p>Head over to <a href="https://github.com/">GitHub</a> and <a data-proofer-ignore="true" href="">create a new repository</a> named <em>username</em>.github.io, where <em>username</em> is your username (or organization name) on GitHub.</p>
+      <h4>Create a new file</h4>
+      <p>Press <kbd>Command + N</kbd> or choose <kbd>New</kbd> menu item under <kbd>File</kbd> menu to create a new file.</p>
 
-      <p class="details">If the first part of the repository doesn’t exactly match your username, it won’t work, so make sure to get it right.</p>
+      <p class="details">Open up the Moxile app would create a new file by default. Any text file would open with Moxile to renderered as markdown</p>
     </li>
 
     <li id="create-repo-step" class="">
@@ -59,8 +133,6 @@
       <p>with Moxile, high-quality math is available</p>
       <img src="assets/slide/gfm-support.png" alt="GitHub for Windows screenshot" class="full-size" width="813">
     </li>
-
-      <p class="details">If the first part of the repository doesn’t exactly match your username, it won’t work, so make sure to get it right.</p>
 
     <li class="question">
       <h4>What desktop environment are you using?</h4>
@@ -111,11 +183,10 @@
 
     <li id="setup-in-desktop" class="option-newuser-w option-newuser-m image-right animate-in hidden">
       <h4>QuickLook in Finder</h4>
-      <p>After finishing the installation, head back to GitHub.com and 
-refresh the page. Click the green "Set up in Desktop" button. When the 
-GitHub desktop app opens, save the project.</p>
+      <p>After the installation, The QuickLook feature is ready for use.
+      you could choose any file in Finder and press <kbd>Space</kbd> to launch the QuickLook to preivew the markdown files without open Moxile</p>
 
-      <p class="details">If the app doesn't open, launch it and clone the repository from the app.</p>
+      <p class="details">QuickLook will lanuch all features suck as Task List and Fenced blocks by default.</p>
     </li>
 
     <li class="option-terminal">
@@ -131,23 +202,6 @@ GitHub desktop app opens, save the project.</p>
       </div>
     </li>
 
-    <li class="option-ghfm option-ghfw option-newuser-w option-newuser-m animate-in hidden">
-      <h4>Full GFM(GitHub Flavored Markdown) extensions support</h4>
-      <p>Supported Features:</p>
-
-      <div class="terminal">
-        <div class="header">index.html</div>
-        <code class="shell">
-          <pre>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;body&gt;
-&lt;h1&gt;Hello World&lt;/h1&gt;
-&lt;p&gt;I'm hosted with GitHub Pages.&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;</pre>
-      </code>
-    </div></li>
-
     <li class="option-terminal">
       <h4>Push it</h4>
       <p>Add, commit, and push your changes:</p>
@@ -162,25 +216,9 @@ GitHub desktop app opens, save the project.</p>
       </div>
     </li>
 
-    <li class="option-ghfw option-newuser-w animate-in hidden">
-      <h4>Commit &amp; sync</h4>
-
-      <p>Enter the repository, commit your changes, and press the sync button.</p>
-
-      <img src="moxile_files/sync-windows2x.png" alt="GitHub for Windows screenshot" class="full-size" width="813">
-    </li>
-
-    <li class="option-ghfm option-newuser-m animate-in hidden">
-      <h4>Commit &amp; sync</h4>
-
-      <p>Enter the repository, commit your changes, and press the sync button.</p>
-
-      <img src="moxile_files/sync-mac.png" alt="GitHub for Mac screenshot" class="full-size">
-    </li>
-
     <li class="option-all">
       <h4>…and you're done!</h4>
-      <p>Fire up a browser and go to <strong>http://<em>username</em>.github.io</strong>.</p>
+      <p>Start writting with Moxile or goto <a href="/support">http://errpro.com/support</a> for support information and extra theme download</p>
       <div class="hero-octicon">
         <span class="mega-octicon octicon-check"></span>
       </div>
@@ -292,56 +330,63 @@ the default branch to the newly created <code>gh-pages</code> branch.</p>
 
   <ul class="next-steps wrapper">
     <li class="jekyll">
-      <a class="hero-octicon" href="https://help.github.com/articles/using-jekyll-with-pages">
-        <span class="mega-octicon octicon-pencil"></span>
+      <a class="hero-octicon" href="/support">
+        <span class="mega-octicon octicon-markdown"></span>
       </a>
-      <h4><a href="https://help.github.com/articles/using-jekyll-with-pages">Blogging with Moxile</a></h4>
-      <p>Using <a href="http://jekyllrb.com/">Jekyll</a>, you can blog using beautiful Markdown syntax, and without having to deal with any databases. <a href="http://jekyllrb.com/docs/quickstart/">Learn how to set up Jekyll</a>.</p>
+      <h4><a href="/support">Writting with Moxile</a></h4>
+      <p>Using Moxile, you can blog using beautiful Markdown syntax, and a lot of extensions, including Github Flavored Markdown Syntax. <a href="http://daringfireball.net/projects/markdown/syntax">Learn the standard markdown syntax</a>.</p>
     </li>
     <li class="custom-urls">
-      <a class="hero-octicon" href="https://help.github.com/articles/setting-up-a-custom-domain-with-pages">
-        <span class="mega-octicon octicon-link"></span>
+      <a class="hero-octicon" href="/support">
+        <span class="mega-octicon octicon-paintcan"></span>
       </a>
-      <h4><a href="https://help.github.com/articles/setting-up-a-custom-domain-with-pages">Custom URLs</a></h4>
-      <p>Want to use your own custom domain for a GitHub Pages site? Just create a file named CNAME  and include your URL. <a href="https://help.github.com/articles/setting-up-a-custom-domain-with-pages">Read more</a>.</p>
+      <h4><a href="/support">Custom Themes and Stylesheets</a></h4>
+      <p>Want to use your own custom themes and stylesheets for Moxile? Just create a new theme in the preferences pane.</p>
     </li>
     <li class="guides">
-      <a class="hero-octicon" href="https://help.github.com/categories/20/articles">
+      <a class="hero-octicon" href="/support">
         <span class="mega-octicon octicon-book"></span>
       </a>
-      <h4><a href="https://help.github.com/categories/20/articles">Guides</a></h4>
-      <p>Learn how to create custom 404 pages, use submodules, and <a href="https://help.github.com/categories/20/articles">learn more about GitHub Pages</a>.</p>
+      <h4><a href="/support">Shortcuts Cheatsheet</a></h4>
+      <p>Moxile comes with a collection thoughtful shortcuts to improve your effectiency and experience <a href="/support">learn more about Moxile shortcuts</a>.</p>
     </li>
   </ul>
 </section>
 
-<script src="moxile_files/analytics.js" async=""></script>
-<!--script src="moxile_files/jquery.js"></script-->
-<script src="assets/js/jquery.min.js"></script>
 <script>window.slides = {"bower":"Bower","jekyllrb":"Jekyll","yeoman":"Yeoman","foundation":"Foundation"}</script>
-<script src="assets/js/application.js"></script>
 
+  </div>
+</div>
 
-<footer class="page-footer">
+<footer role="contentinfo" class="page-footer">
   <ul class="site-footer-links right">
-    <li><a href="https://status.github.com/">Status</a></li>
-    <li><a href="https://developer.github.com/">API</a></li>
-    <li><a href="https://training.github.com/">Training</a></li>
-    <li><a href="http://shop.github.com/">Shop</a></li>
-    <li><a href="https://github.com/blog">Blog</a></li>
-    <li><a href="https://github.com/about">About</a></li>
+    <li><a href="/support">Support</a></li>
   </ul>
 
-  <a href="https://pages.github.com/">
-    <span class="mega-octicon octicon-mark-github"></span>
+  <a href="/">
+    <span class="mega-octicon octicon-globe"></span>
   </a>
 
   <ul class="site-footer-links">
-    <li>© 2015 <span>errpro.com</span></li>
+    <li>© 2014-2015 <span>errpro</span></li>
+    <!--
     <li><a href="terms.html">Terms</a></li>
     <li><a href="privacy.html">Privacy</a></li>
     <li><a href="security.html">Security</a></li>
     <li><a href="contact.html">Contact</a></li>
+    -->
   </ul>
 </footer>
-</body></html>
+
+<script src="moxile_files/analytics.js" async=""></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/application.js"></script>
+
+
+  </main>
+  <footer role="contentinfo">
+  </footer>
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+</body>
+</html>

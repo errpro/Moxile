@@ -3,7 +3,7 @@
 html, body, div, span, object,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
+del, dfn, em, img, ins, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
@@ -660,14 +660,6 @@ h1 {
   transition-delay: 0.15s;
 }
 
-.custom-urls .mega-octicon {
-  -webkit-transform:rotate(-45deg);
-  -moz-transform:rotate(-45deg);
-  -o-transform:rotate(-45deg);
-  -ms-transform:rotate(-45deg);
-  transform:rotate(-45deg);
-}
-
 .next-steps .guides {
   -webkit-transition-delay: 0.3s;
   -moz-transition-delay: 0.3s;
@@ -698,7 +690,7 @@ footer {
   margin-left: 0;
 }
 
-footer .octicon-mark-github {
+footer .octicon-globe {
   position: absolute;
   top: 38px;
   left: 50%;
@@ -741,7 +733,6 @@ footer .right {
 .octicon-check:before { content: '\f03a'} /*  */
 
 .octicon-link:before { content: '\f05c'} /*  */
-.octicon-mark-github:before { content: '\f00a'} /*  */
 .octicon-pencil:before { content: '\f058'} /*  */
 
 /* @end Octicons */
