@@ -64,11 +64,13 @@
 <h1><i class="fa fa-support"></i> Support</h1>
 </div>
 <div class="panel panel-primary">
-  <div class="panel-heading">Table of Index</div>
+  <div class="panel-heading"><i class="fa fa-list"></i> Table of Index</div>
   <div class="panel-body">
-    <i class="fa fa-support"></i> Moxile Support
+    Support contains 5 sections, help section introduce basic operations.
   </div>
 <ul class="list-group">
+  <li class="list-group-item"><a href="#help"><i class="fa fa-support"></i> Help</a></li>
+  <li class="list-group-item"><a href="#shortcuts"><i class="fa fa-keyboard-o"></i> Keyboard Shortcuts</a></li>
   <li class="list-group-item"><a href="#faq"><i class="fa fa-question-circle"></i> FAQ</a></li>
   <li class="list-group-item"><a href="#osx"><i class="fa fa-apple"></i> OS X</a></li>
   <li class="list-group-item"><a href="#linux"><i class="fa fa-linux"></i> Linux</a></li>
@@ -76,10 +78,81 @@
 </ul>
 </div>
 
-<div id="faq" class="panel panel-primary">
-  <div class="panel-heading"><i class="fa fa-support"></i> FAQ</div>
+<div id="help" class="panel panel-primary">
+  <div class="panel-heading"><i class="fa fa-keyboard-o"></i> Keyboard Shortcuts</div>
   <div class="panel-body">
-    <blockquote>Open &amp; Save</blockquote>
+    <dl class="dl-horizontal">
+      <table class="table">
+        <thead><tr><th>Option Name</th><th>Shortcut</th></tr></thead>
+        <tbody>
+        <tr><td>New</td><td><kbd>Command + N</kbd></td></tr>
+        <tr><td>Open</td><td><kbd>Command + O</kbd></td></tr>
+        <tr><td>Save</td><td><kbd>Command + S</kbd></td></tr>
+        <tr><td>Save As</td><td><kbd>Command + Shift + S</kbd></td></tr>
+        <tr><td>Close</td><td><kbd>Command + W</kbd></td></tr>
+        <tr><td>Print Preview</td><td><kbd>Command + Shift + P</kbd></td></tr>
+        <tr><td>Print</td><td><kbd>Command + P</kbd></td></tr>
+        <tr><td>Find</td><td><kbd>Command + F</kbd></td></tr>
+        <tr><td>Replace</td><td><kbd>Command + Shift + F</kbd></td></tr>
+        <tr><td>Strong</td><td><kbd>Command + B</kbd></td></tr>
+        <tr><td>Emphasis</td><td><kbd>Command + I</kbd></td></tr>
+        <tr><td>Strikethrough</td><td><kbd>Command + U</kbd></td></tr>
+        <tr><td>Uppercase</td><td><kbd>Ctrl + U</kbd></td></tr>
+        <tr><td>Titlecase</td><td><kbd>Ctrl + Option + U</kbd></td></tr>
+        <tr><td>Lowercase</td><td><kbd>Ctrl + Shift + U</kbd></td></tr>
+        <tr><td>Inline code</td><td><kbd>Command + K</kbd></td></tr>
+        <tr><td>Blockquote</td><td><kbd>Ctrl + Q</kbd></td></tr>
+        <tr><td>Header 1..6</td><td><kbd>Command + 1..6</kbd></td></tr>
+        <tr><td>Increse font size</td><td><kbd>Command + Option + +</kbd></td></tr>
+        <tr><td>Decrese font size</td><td><kbd>Command + Option + -</kbd></td></tr>
+        <tr><td>Comment</td><td><kbd>Command + /</kbd></td></tr>
+        <tr><td>Task List</td><td><kbd>Command + T</kbd></td></tr>
+        <tr><td>Bulluted List</td><td><kbd>Command + L</kbd></td></tr>
+        <tr><td>Increse Indent</td><td><kbd>Command + ]</kbd></td></tr>
+        <tr><td>Decrese Indent</td><td><kbd>Command + [</kbd></td></tr>
+        <tr><td>Bulluted List</td><td><kbd>Command + L</kbd></td></tr>
+        <tr><td>Update preview</td><td><kbd>Command + R</kbd></td></tr>
+        <tr><td>Zoom in</td><td><kbd>Command + +</kbd></td></tr>
+        <tr><td>Zoom out</td><td><kbd>Command + -</kbd></td></tr>
+        <tr><td>Zoom reset</td><td><kbd>Command + 0</kbd></td></tr>
+        <tr><td>Minimize</td><td><kbd>Command + M</kbd></td></tr>
+        <tr><td>Fullscreen</td><td><kbd>Command + Shift + F</kbd></td></tr>
+        </tbody>
+        <tfoot>
+        </tfoot>
+      </table>
+    </dl>
+  </div>
+</div>
+
+<div id="help" class="panel panel-primary">
+  <div class="panel-heading"><i class="fa fa-support"></i> Help</div>
+  <div class="panel-body">
+    <dl class="dl-horizontal">
+      <dt>File</dt>
+      <dd>New, Open, Save, Close, Export</dd>
+      <dt>Share</dt>
+      <dd>Email is supported by now</dd>
+      <dt>Export</dt>
+      <dd>HTML and PDF are supported by now</dd>
+    </dl>
+  </div>
+</div>
+
+<div id="faq" class="panel panel-primary">
+  <div class="panel-heading"><i class="fa fa-info-circle"></i> FAQ</div>
+  <div class="panel-body">
+    For questions those not listed below, you may send mail to <a href="mailto:errpro@icloud.com">errpro@icloud.com</a> for help.
+  </div>
+  <div class="list-group">
+    <div class="list-group-item">
+      <h4 class="list-group-item-heading">What are the supported math format?</h4>
+      Moxile use MathJax for built-in math renderer, so all the math expression supported by MathJax should work with Moxile.
+    </div>
+    <div class="list-group-item">
+      <h4 class="list-group-item-heading">How to custom specific element in the document?</h4>
+      Markdown support embedded HTML element, so you could use style attribute of the HTML element to do that.
+    </div>
   </div>
 </div>
 
