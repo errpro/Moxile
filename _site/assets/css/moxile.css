@@ -364,12 +364,12 @@ h1 {
 }
 
 #create-repo-step {
-  background: #fff url(/images/user-repo@2x.png) right 0 no-repeat;
+  background: #fff url(../img/new-file@2x.png) no-repeat right 0;
   background-size: 446px 344px;
 }
 
 #setup-in-desktop {
-  background: #fff url(/images/setup-in-desktop@2x.png) no-repeat right 0;
+  background: #fff url(../img/QuickLook.png) no-repeat right 0;
   background-size: 443px 303px;
 }
 
